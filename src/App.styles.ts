@@ -1,5 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles';
-import { blue, mediumGrey, white } from './components/colors';
+import { blue, hoverBlue, mediumGrey, white, darkWhite } from './components/colors';
 
 export const useStyles = makeStyles((theme) => ({
   root: {
@@ -13,6 +13,11 @@ export const useStyles = makeStyles((theme) => ({
   loadButton: {
     float: "right",
     margin: "auto 20px auto -100px",
+    backgroundColor: `${blue}`, 
+    '&:hover': {
+      backgroundColor: `${hoverBlue}`,
+      color: `${darkWhite}`,
+    }
   },
   overview: {
     backgroundColor: `${blue}`,
